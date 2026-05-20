@@ -26,7 +26,6 @@ scm-coda/
 │   ├── LSD.R                # Simulation for limiting spectral distribution
 │   ├── LSS.R                # Simulation for CLT of linear spectral statistics
 │   ├── LSS_plot.R           # Plotting script for normalized LSS histograms
-│   ├── PowerExm2.jl         # Verify condition for power of covariance test
 │   └── Mp.R                 # Supplementary simulation for M_p(z)
 ├── data/
 │   ├── CovTest/             # CSV / XLSX / LaTeX outputs for covariance testing
@@ -56,10 +55,9 @@ Rscript codes/install_R_packages.R # Install R dependencies
 # 2 Main Simulation
 # ============================
 Rscript codes/LSD.R # Figures 1 - 2
-julia --project=. codes/PowerExm2.jl # Table 1
-Rscript codes/LSS.R # Tables 2 - 3
+Rscript codes/LSS.R # Tables 1 - | Column1
 Rscript codes/LSS_plot.R # Figures 3 - 4
-julia --project=. codes/CovTest.jl # Tables 4 - 5
+julia --project=. codes/CovTest.jl # Tables 3 - 4
 
 # ============================
 # 3 Supplementary simulations
