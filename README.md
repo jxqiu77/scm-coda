@@ -55,7 +55,7 @@ Rscript codes/install_R_packages.R # Install R dependencies
 # 2 Main Simulation
 # ============================
 Rscript codes/LSD.R # Figures 1 - 2
-Rscript codes/LSS.R # Tables 1 - | Column1
+Rscript codes/LSS.R # Tables 1 - 2
 Rscript codes/LSS_plot.R # Figures 3 - 4
 julia --project=. codes/CovTest.jl # Tables 3 - 4
 
